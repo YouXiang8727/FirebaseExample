@@ -2,16 +2,32 @@ plugins {
     alias(libs.plugins.android.application)
     alias(libs.plugins.kotlin.android)
     alias(libs.plugins.kotlin.compose)
+
+    alias(libs.plugins.google.services)
 }
 
 android {
+    signingConfigs {
+        getByName("debug") {
+            storeFile = file("/Users/lgroupdavid.hs/Desktop/Project/key/youxiang8727key.jks")
+            storePassword = "youxiang12356487"
+            keyAlias = "firebase"
+            keyPassword = "youxiang12356487"
+        }
+        create("release") {
+            storeFile = file("/Users/lgroupdavid.hs/Desktop/Project/key/youxiang8727key.jks")
+            storePassword = "youxiang12356487"
+            keyAlias = "firebase"
+            keyPassword = "youxiang12356487"
+        }
+    }
     namespace = "com.youxiang8727.firebaseexample"
-    compileSdk = 34
+    compileSdk = 35
 
     defaultConfig {
         applicationId = "com.youxiang8727.firebaseexample"
         minSdk = 29
-        targetSdk = 34
+        targetSdk = 35
         versionCode = 1
         versionName = "1.0"
 
@@ -56,4 +72,7 @@ dependencies {
     androidTestImplementation(libs.androidx.ui.test.junit4)
     debugImplementation(libs.androidx.ui.tooling)
     debugImplementation(libs.androidx.ui.test.manifest)
+
+    implementation(platform(libs.firebase.bom))
+    implementation(libs.firebase.analytics)
 }
