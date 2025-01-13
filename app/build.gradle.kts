@@ -82,4 +82,6 @@ dependencies {
     ksp(libs.hilt.android.compiler)
     implementation(libs.hilt.android)
     implementation(libs.hilt.navigation.compose)
+
+    implementation(libs.firebase.auth)
 }
