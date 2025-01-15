@@ -1,7 +1,6 @@
 package com.youxiang8727.firebaseexample.ui.account.login.mvi
 
 import com.youxiang8727.firebaseexample.Reducer
-import com.youxiang8727.firebaseexample.data.network.NetworkResult
 
 class SignInWithEmailAndPasswordPageReducer: Reducer<SignInWithEmailAndPasswordPageState, SignInWithEmailAndPasswordPageAction> {
     override fun reduce(state: SignInWithEmailAndPasswordPageState, action: SignInWithEmailAndPasswordPageAction): SignInWithEmailAndPasswordPageState {

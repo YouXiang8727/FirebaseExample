@@ -2,7 +2,6 @@ package com.youxiang8727.firebaseexample.ui.account.login.mvi
 
 import com.google.firebase.auth.FirebaseUser
 import com.youxiang8727.firebaseexample.State
-import com.youxiang8727.firebaseexample.data.network.NetworkResult
 
 data class SignInWithEmailAndPasswordPageState(
     val email: String = "",

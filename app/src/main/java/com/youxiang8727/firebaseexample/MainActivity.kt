@@ -14,7 +14,7 @@ import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
-import com.youxiang8727.firebaseexample.ui.account.login.SignInWithEmailAndPasswordPage
+import com.youxiang8727.firebaseexample.navigation.MainNavigation
 import com.youxiang8727.firebaseexample.ui.theme.FirebaseExampleTheme
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -33,7 +33,7 @@ class MainActivity : ComponentActivity() {
                             .padding(16.dp),
                         contentAlignment = Alignment.Center
                     ) {
-                        SignInWithEmailAndPasswordPage()
+                        MainNavigation()
                     }
                 }
             }
