@@ -31,7 +31,7 @@ fun MainNavigation() {
         startDestination = Navigation.SIGN_IN_WITH_EMAIL_AND_PASSWORD_PAGE.route
     ) {
         composable(Navigation.MAIN_PAGE.route) {
-            MainPage()
+            MainPage(mainViewModel)
         }
 
         composable(Navigation.SIGN_IN_WITH_EMAIL_AND_PASSWORD_PAGE.route) {
